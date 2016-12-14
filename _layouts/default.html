@@ -7,10 +7,18 @@
 
     {% include header.html %}
 
-
     <div class="page-content">
       <div class="wrapper">
+        <div class="header-bar">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <h2 class="post-description">{{ page.description }}</h2>
+            <br/>
+            <hr>
+            <br/>
+        </div>
+
         {{ content }}
+
       </div>
     </div>
 

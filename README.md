@@ -1,11 +1,6 @@
-# *folio
-A simple theme for showcasing your work, emphasis on whitespace, transparency, and helvetica. 
-
-
-<a href="http://liabogoev.com/-folio">Live Demo</a>
+<a href="https://travs-w.github.io">My Portfolio site</a>, which has been adapted from the <a href="http://liabogoev.com/-folio">*folio Jekyll template</a>.
 
 <hr/>
-
 
 ## Features
 
@@ -37,7 +32,6 @@ This theme implements Jekyll's built in code syntax highlighting with Pygments. 
 {% highlight python %}
 	code code code
 {% endhighlight %}
-
 
 <hr/>
 The MIT License (MIT)
