@@ -13,7 +13,16 @@ height:56px;
 width:100%;
 z-index: 50;
 }
-
+.no-mobile{
+    @include media-query($on-palm) {
+        display:none;
+    }
+}
+.no-mo-padding{
+    @include media-query($on-palm) {
+        padding:0;
+    }
+}
 .site-title {
 font-size: 20px;
 line-height: $nav-height;
@@ -73,9 +82,15 @@ display: line;
     h1{
         color: $theme-color;
         font-size:75px;
+        @include media-query($on-palm) {
+            font-size:55px;
+        }
     }
     h2{
         font-size:25px;
+        @include media-query($on-palm) {
+            line-height:2em;
+        }
     }
 }
 
@@ -129,7 +144,7 @@ margin-bottom: $vertical-spacing-unit;
 .contacticon {
 font-size: 60px;
 display:block;
-margin: 10px;
+margin: 10px 10px 0 10px;
 }
 /**
  * Posts  **********************************************************
@@ -141,8 +156,8 @@ margin-bottom: $vertical-spacing-unit;
 font-size: 42px;
 letter-spacing: -1px;
 line-height: 1;
-@include media-query($on-laptop) {
-font-size: 36px;
+    @include media-query($on-laptop) {
+        font-size: 36px;
     }
 }
 .post-content {
